@@ -15,7 +15,9 @@ To test it, please follow the steps below:
 its list of paired devices (and any other device it is paired with).
 4- On D2, tap on the name of D1 in the shown list of paired devices. 
 Now both devices are connected and the acceloremeter data read from D1 will be 
-displayed as a timeseries plot on D2. 
+displayed as a timeseries plot on D2. The y-axis represents the root mean square 
+of the acceleration forces along the x, y and z axes. I used the root mean square in 
+order to omit any negative values and to display the three forces on a single graph.
 
 
 References used:
