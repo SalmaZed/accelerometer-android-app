@@ -10,13 +10,13 @@ as this application requires both devices to be paired.
 
 To test it, please follow the steps below:
 1- Connect the two Android mobile devices to your computer & run the code on both of them.
-2- On only one of the two devices, let us name it #D1, tap on "LISTEN". 
+2- On only one of the two devices, let us name it D1, tap on "LISTEN". 
 This would allow any other paired device to connect with this device.
-3- On the other device, #D2, tap on "LIST DEVICES" to show you the previous device in 
+3- On the other device, D2, tap on "LIST DEVICES" to show you the previous device in 
 its list of paired devices (and any other device it is paired with).
-4- On #D2, tap on the name of #D1 in the shown list of paired devices. 
-Now both devices are connected and the acceloremeter data read from #D1 will be 
-displayed as a timeseries plot on #D2. 
+4- On D2, tap on the name of D1 in the shown list of paired devices. 
+Now both devices are connected and the acceloremeter data read from D1 will be 
+displayed as a timeseries plot on D2. 
 
 
 References used:
