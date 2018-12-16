@@ -152,7 +152,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
                     @Override
                     public void run() {
-                        // we add 100 new entries
                         while(true){
                             runOnUiThread(new Runnable() {
 
@@ -161,12 +160,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                                     addEntry();
                                 }
                             });
-
-                            // sleep to slow down the add of entries
                             try {
                                 Thread.sleep(500);
                             } catch (InterruptedException e) {
-                                // manage error ...
                             }
                         }
                     }
@@ -226,12 +222,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                     Log.e(TAG, "accepting............");
                     socket = serverSocket.accept(); //accept the connection with the client
                 } catch (IOException e) {
-                    Log.e(TAG, "socket is null!!!!!!!!!!!!!!1");
+                    //Log.e(TAG, "socket is null");
                     e.printStackTrace();
                 }
                 if(socket!=null)
                 {
-                    Log.d(TAG, "!!!!!!!!!!!!!!!!Server socket is not null.");
+                    //Log.d(TAG, "socket is not null.");
                     sendReceive = new SendReceive(socket);
                     sendReceive.start();
                     break;
@@ -240,7 +236,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
             while(true)
             {
-                Log.d(TAG, "writing: "+ b.toString());
+                //Log.d(TAG, "writing: "+ b.toString());
                 sendReceive.write(b); //send the accelerometer data
                 try {
                     Thread.sleep(500);
